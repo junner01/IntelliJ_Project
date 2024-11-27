@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<h2>Member List<h2>
+<h2>Member List</h2>
 
 <ul>
     <c:forEach var="dto" items="${list}">
