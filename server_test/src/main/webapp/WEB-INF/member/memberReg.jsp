@@ -11,10 +11,10 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Member-글쓰기 폼 화면</h1>
+    <h1>Member 추가</h1>
 <form action="/member/mReg" method="post">
     <div>
-        <input type="text" name="title" placeholder="제목 입력 해주세요.">
+        <input type="text" name="title" placeholder="이름을 입력하세요.">
     </div>
     <div>
         <input type="date" name="dueDate">
@@ -22,5 +22,6 @@
     <button type="reset">초기화</button>
     <button type="submit">등록</button>
 </form>
+
 </body>
 </html>

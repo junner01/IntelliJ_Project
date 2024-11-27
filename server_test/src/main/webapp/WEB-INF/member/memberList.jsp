@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<h2>Member List/h2>
+<h2>Member List<h2>
 
 <ul>
     <c:forEach var="dto" items="${list}">
@@ -26,6 +26,11 @@
         </li>
     </c:forEach>
 </ul>
+
+<button>
+    <a href="/member/mReg">회원 등록</a>
+</button>
+
 
 </body>
 </html>

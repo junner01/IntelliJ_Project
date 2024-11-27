@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-@WebServlet(name = "MemberRegController",urlPatterns = "/member/foodregister2")
+@WebServlet(name = "MemberRegController",urlPatterns = "/member/mReg")
 public class MemberRegController extends HttpServlet {
 
 
@@ -24,7 +24,7 @@ public class MemberRegController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        request.getRequestDispatcher("/WEB-INF/member/mReg.jsp")
+        request.getRequestDispatcher("/WEB-INF/member/memberReg.jsp")
                 .forward(request, response);
     }
 
@@ -36,6 +36,7 @@ public class MemberRegController extends HttpServlet {
                 .title(request.getParameter("title"))
                 .dueDate(LocalDate.parse(request.getParameter("dueDate"),DATE_TIME_FORMATTER))
                 .build();
+
 
         try {
             memberService.register(memberDTO);
